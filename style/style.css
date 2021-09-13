@@ -9,7 +9,7 @@
     
      :root {
         --first-color: #999996;
-        --second-color: #ddbc27;
+        --second-color: goldenrod;
     }
     
      :root {
@@ -382,7 +382,6 @@
         border: none;
         outline: none;
         font-size: var(--normal-font-size);
-        cursor: pointer;
         margin-left: auto;
     }
     /* ===== FOOTER =====*/
