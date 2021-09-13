@@ -147,12 +147,23 @@
             <h2 class="section-title">Contact</h2>
 
             <div class="contact__container bd-grid">
-                <form action="" class="contact__form">
-                    <input type="text" placeholder="Name" class="contact__input">
-                    <input type="mail" placeholder="Email" class="contact__input">
-                    <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
-                    <input type="button" value="Send" class="contact__button button">
+                <form action="contact-form-handler.php" name=”contact_form” method="post" name="EmailForm" class="contact__form">
+
+                    <script language="JavaScript">
+                        var frmvalidator = new Validator("contactform");
+                        frmvalidator.addValidation("name", "req", "Please provide your name");
+                        frmvalidator.addValidation("email", "req", "Please provide your email");
+                        frmvalidator.addValidation("email", "email",
+                            "Please enter a valid email address");
+                    </script>
+                    <input type="text" placeholder="Name" name="name" class="contact__input">
+                    <input type="mail" placeholder="Email" name="email" class="contact__input">
+                    <textarea name="message" id="" cols="0" rows="10" class="contact__input"></textarea>
+                    <input type="submit" value="send" class="contact__button button">
+
+
                 </form>
+
             </div>
 
     </main>
