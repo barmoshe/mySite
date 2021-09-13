@@ -223,8 +223,8 @@
     }
     
     .home__social {
-        display: inline;
-        flex-direction: column;
+        display: flex;
+        flex-direction: unset;
     }
     
     .home__social-icon {
