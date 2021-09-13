@@ -8,22 +8,22 @@
     /*===== Colores =====*/
     
      :root {
-        --first-color: #535351;
+        --first-color: #c0c0bf;
         --second-color: #ddbc27;
     }
     
      :root {
         --body-font: 'Glory', sans-serif;
-        --big-font-size: 2rem;
-        --h2-font-size: 1.25rem;
-        --normal-font-size: 0.938rem;
+        --big-font-size: 2.2rem;
+        --h2-font-size: 1.45rem;
+        --normal-font-size: 0.988rem;
     }
     
     @media screen and (min-width: 768px) {
          :root {
-            --big-font-size: 3.5rem;
-            --h2-font-size: 2rem;
-            --normal-font-size: 1rem;
+            --big-font-size: 3.8rem;
+            --h2-font-size: 2.3rem;
+            --normal-font-size: 1.2rem;
         }
     }
     
@@ -127,8 +127,8 @@
         top: 0;
         left: 0;
         z-index: var(--z-fixed);
-        background-color: #fff;
-        box-shadow: 0 1px 4px rgba(146, 161, 176, .15);
+        background-color: #5e5d5b;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.65);
     }
     /*===== NAV =====*/
     
