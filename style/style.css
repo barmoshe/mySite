@@ -8,11 +8,29 @@ body {
 
 .ToolBar {
     border-radius: 15px;
-    width: auto;
-    height: auto;
-    background-color: black;
+    width: fit-content;
+    height: max-content;
     top: 3%;
     left: 2%;
+    background-color: rgb(77, 97, 97);
     position: absolute;
     box-sizing: border-box;
+}
+
+.ToolBarButton {
+    padding: 3%;
+    width: auto;
+    height: auto;
+    font-size: large;
+    font-family: 'Glory', sans-serif;
+    background-color: Transparent;
+    border: none;
+    overflow: hidden;
+    background-color: #666A6B;
+    border-radius: 15px;
+    transition-duration: 0.4s;
+}
+
+.ToolBarButton:hover {
+    background-color: blue;
 }
