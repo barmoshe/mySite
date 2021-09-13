@@ -22,15 +22,6 @@ function linkAction() {
     /*Remove menu mobile*/
     const navMenu = document.getElementById('nav-menu');
     navMenu.classList.remove('show');
-    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-        // true for mobile device
-        var homeIMG = document.getElementById('home_photo');
-        homeIMG.remove();
-
-    }
-
-
-
 }
 navLink.forEach(n => n.addEventListener('click', linkAction));
 
