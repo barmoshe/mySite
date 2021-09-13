@@ -223,7 +223,7 @@
     }
     
     .home__social {
-        display: flex;
+        display: inline;
         flex-direction: column;
     }
     
