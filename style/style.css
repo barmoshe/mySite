@@ -2,21 +2,30 @@
      :root {
         --header-height: 3rem;
         --font-semi: 600;
-        --first-color: #666A6B;
-        --second-color: #e2c231;
+    }
+    /*===== Colores =====*/
+    
+     :root {
+        --first-color: #474644;
+        --second-color: #e9c62c;
+    }
+    /*===== Fuente y tipografia =====*/
+    
+     :root {
         --body-font: 'Glory', sans-serif;
         --big-font-size: 2rem;
-        --normal-font-size: 0.938rem;
         --h2-font-size: 1.25rem;
+        --normal-font-size: 0.938rem;
     }
     
-    @media screen and (min-width:768px) {
+    @media screen and (min-width: 768px) {
          :root {
             --big-font-size: 3.5rem;
-            --normal-font-size: 1rem;
             --h2-font-size: 2rem;
+            --normal-font-size: 1rem;
         }
     }
+    /*===== Margenes =====*/
     
      :root {
         --mb-1: 0.5rem;
@@ -25,11 +34,16 @@
         --mb-4: 2rem;
         --mb-5: 2.5rem;
         --mb-6: 3rem;
+    }
+    /*===== z index =====*/
+    
+     :root {
         --z-back: -10;
         --z-normal: 1;
         --z-tooltip: 10;
-        --z-fixed: 10;
+        --z-fixed: 100;
     }
+    /*===== BASE =====*/
     
     *,
      ::before,
@@ -44,6 +58,7 @@
     body {
         margin: var(--header-height)0 0 0;
         font-family: var(--body-font);
+        font-size: var(--normal-font-size);
         color: var(--second-color);
     }
     
@@ -112,8 +127,8 @@
         top: 0;
         left: 0;
         z-index: var(--z-fixed);
-        background-color: #fff;
-        box-shadow: 0 1px 4px rgba(146, 161, 176, .15);
+        background-color: var(--first-color);
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.65);
     }
     
     .nav {
@@ -143,7 +158,7 @@
     
     .nav__link {
         position: relative;
-        color: #fff;
+        color: rgb(58, 45, 1);
     }
     
     .nav__link:hover {
