@@ -220,6 +220,7 @@
     
     .home__title-color {
         color: var(--first-color);
+        font-size: x-large;
     }
     
     .home__social {
