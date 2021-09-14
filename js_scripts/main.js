@@ -55,3 +55,8 @@ sr.reveal('.work__staff', { interval: 200 });
 
 /*SCROLL CONTACT*/
 sr.reveal('.contact__input', { interval: 200 });
+
+const form = document.getElementById('EmailForm')
+form.addEventListener('submit', (e) => {
+    alert('Thank you for reaching me, I will reply as soon as possible');
+})
