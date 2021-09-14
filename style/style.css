@@ -357,6 +357,8 @@
         text-align: center;
         align-items: center;
         border-radius: .5rem;
+        width: auto;
+        height: auto;
     }
     
     .work__img {
