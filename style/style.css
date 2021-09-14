@@ -220,7 +220,7 @@
     
     .home__title-color {
         color: var(--first-color);
-        font-size: x-large;
+        font-size: var(--h2-font-size);
     }
     
     .home__social {
@@ -446,6 +446,9 @@
         .home {
             height: 100vh;
         }
+        .home__title-color {
+            font-size: large;
+        }
         .home__data {
             align-self: flex-end;
         }
@@ -454,7 +457,6 @@
             padding-bottom: 2.5rem;
             flex-direction: row;
             align-self: flex-end;
-            color: black;
         }
         .home__social-icon {
             margin-bottom: 0;
