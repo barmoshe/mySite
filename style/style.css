@@ -259,6 +259,11 @@
     .button:hover {
         box-shadow: 0 10px 36px rgba(0, 0, 0, .15);
     }
+    
+    .button--flex {
+        display: inline-flex;
+        align-items: center;
+    }
     /* ===== ABOUT =====*/
     
     .about__container {
