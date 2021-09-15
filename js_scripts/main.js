@@ -11,65 +11,6 @@ const showMenu = (toggleId, navId) => {
 }
 showMenu('nav-toggle', 'nav-menu')
 
-/*===== ACTIVE AND REMOVE MENU =====*/
-const navLink = document.querySelectorAll('.nav__link');
-
-function linkAction() {
-    /*Active link*/
-    navLink.forEach(n => n.classList.remove('active'));
-    this.classList.add('active');
-
-    /*Remove menu mobile*/
-    const navMenu = document.getElementById('nav-menu');
-    navMenu.classList.remove('show');
-}
-navLink.forEach(n => n.addEventListener('click', linkAction));
-
-/*===== SCROLL REVEAL ANIMATION =====*/
-sr = ScrollReveal({
-    origin: 'top',
-    distance: '80px',
-    duration: 1600,
-    reset: true,
-});
-
-
-/*SCROLL HOME*/
-sr.reveal('.home__title', {});
-sr.reveal('.button', { delay: 200 });
-sr.reveal('.home__img', { delay: 400 });
-sr.reveal('.home__social-icon', { interval: 200 });
-
-/*SCROLL ABOUT*/
-sr.reveal('.about__img', {});
-sr.reveal('.about__subtitle', { delay: 400 });
-sr.reveal('.about__text', { delay: 400 });
-ScrollReveal({
-    origin: 'left',
-    distance: '80px',
-    duration: 1600,
-    reset: true,
-});
-/*SCROLL SKILLS*/
-sr.reveal('.skills__subtitle', {});
-sr.reveal('.skills__text', {});
-sr.reveal('.skills__data', { interval: 200 });
-sr.reveal('.skills__img', { delay: 600 });
-
-ScrollReveal({
-    origin: 'top',
-    distance: '65px',
-    duration: 1600,
-    reset: true,
-});
-
-/*SCROLL WORK*/
-sr.reveal('.work__staff', { interval: 200 });
-
-/*SCROLL CONTACT*/
-sr.reveal('.contact__input', { interval: 200 });
-
-
 var textOverImages = document.getElementsByClassName("onClickTextOverImage");
 var previousTextOverImage;
 for (var i = 0; i < textOverImages.length; i++) {
@@ -89,3 +30,53 @@ for (var i = 0; i < textOverImages.length; i++) {
 function stopPropagation(event) {
     event.stopPropagation();
 }
+/*===== ACTIVE AND REMOVE MENU =====*/
+const navLink = document.querySelectorAll('.nav__link');
+
+function linkAction() {
+    /*Active link*/
+    navLink.forEach(n => n.classList.remove('active'));
+    this.classList.add('active');
+
+    /*Remove menu mobile*/
+    const navMenu = document.getElementById('nav-menu');
+    navMenu.classList.remove('show');
+}
+navLink.forEach(n => n.addEventListener('click', linkAction));
+
+/*===== SCROLL REVEAL ANIMATION =====*/
+sr = ScrollReveal({
+    origin: 'top',
+    distance: '115px',
+    duration: 1600,
+    reset: true,
+});
+
+
+/*SCROLL HOME*/
+sr.reveal('.home__title', {});
+sr.reveal('.button', { delay: 200 });
+sr.reveal('.home__img', { delay: 400 });
+sr.reveal('.home__social-icon', { interval: 200 });
+
+/*SCROLL ABOUT*/
+sr.reveal('.about__img', {});
+sr.reveal('.about__subtitle', { delay: 400 });
+sr.reveal('.about__text', { delay: 400 });
+ScrollReveal({
+    origin: 'left',
+});
+/*SCROLL SKILLS*/
+sr.reveal('.skills__subtitle', {});
+sr.reveal('.skills__text', {});
+sr.reveal('.skills__data', { interval: 200 });
+sr.reveal('.skills__img', { delay: 600 });
+
+ScrollReveal({
+    origin: 'top',
+});
+
+/*SCROLL WORK*/
+sr.reveal('.work__img', { interval: 200 });
+/*SCROLL CONTACT*/
+sr.reveal('.contact__input', { interval: 200 });
