@@ -119,7 +119,7 @@
     /*===== LAYOUT =====*/
     
     .bd-grid {
-        max-width: 1024px;
+        max-width: auto;
         display: grid;
         grid-template-columns: 100%;
         grid-column-gap: 2rem;
@@ -378,6 +378,8 @@
         transition: 1s;
         cursor: pointer;
         display: inline;
+        max-width: 500px;
+        min-width: 500px;
     }
     
     .work__img img:hover {
@@ -536,11 +538,6 @@
         opacity: 1;
         padding-top: 3%;
         visibility: visible;
-    }
-    
-    .play-pause-button {
-        font-size: 50px;
-        cursor: pointer;
     }
     
     @media screen and (min-width: 1024px) {
