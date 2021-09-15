@@ -49,12 +49,12 @@
      ::after {
         box-sizing: border-box;
     }
-
-html, body {
-    max-width: 100%;
-    overflow-x: hidden;
-}
-
+    
+    html,
+    body {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
     
     html {
         scroll-behavior: smooth;
@@ -363,7 +363,7 @@ html, body {
         text-align: center;
         align-items: center;
         border-radius: .5rem;
-        width: auto;
+        width: 95%;
         height: auto;
     }
     
@@ -519,15 +519,15 @@ html, body {
     .onClickTextOverImage div {
         position: absolute;
         color: #fff;
-        padding: 8px;
         top: 0;
         bottom: 0;
         right: 0;
         left: 0;
+        padding: 8%;
         background-color: #5e5d5bed;
         border-radius: 16px;
-        padding-top: 35%;
-        text-align: center;
+        padding-top: 4%;
+        text-align: left;
         opacity: 0;
         visibility: hidden;
         transition: .3s;
@@ -535,7 +535,7 @@ html, body {
     
     .onClickTextOverImage.show div {
         opacity: 1;
-        padding-top: 40%;
+        padding-top: 3%;
         visibility: visible;
     }
     
