@@ -528,7 +528,7 @@
     
     .onClickTextOverImage div {
         position: absolute;
-        color: rgb(236, 229, 200);
+        color: #fff;
         top: 0;
         bottom: 0;
         right: 0;
