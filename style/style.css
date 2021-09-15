@@ -227,9 +227,6 @@
     
     .home__title-color {
         color: var(--first-color);
-        text-align: center;
-        align-items: center;
-        align-content: flex-start;
     }
     
     .home__social {
@@ -245,12 +242,6 @@
     
     .home__social-icon:hover {
         color: var(--first-color);
-    }
-    
-    .audio1 {
-        background-color: rgb(151, 112, 38);
-        border-radius: .5rem;
-        width: max-content;
     }
     
     .home__img {
