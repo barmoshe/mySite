@@ -395,6 +395,7 @@ img {
 .work__img {
     border-radius: .5rem;
     overflow: hidden;
+    background-color: black;
 }
 
 .work__img img {
