@@ -227,6 +227,9 @@
     
     .home__title-color {
         color: var(--first-color);
+        text-align: center;
+        align-items: center;
+        align-content: flex-start;
     }
     
     .home__social {
@@ -235,7 +238,6 @@
     }
     
     .home__social-icon {
-        width: max-content;
         margin-bottom: var(--mb-2);
         font-size: 2.2rem;
         color: var(--second-color);
@@ -246,9 +248,9 @@
     }
     
     .audio1 {
-        background-color: goldenrod;
+        background-color: rgb(151, 112, 38);
         border-radius: .5rem;
-        ;
+        width: max-content;
     }
     
     .home__img {
