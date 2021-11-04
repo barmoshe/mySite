@@ -411,13 +411,9 @@ img {
 
 .work__img img {
     border-radius: .5rem;
-    transition: 1s;
+    transition: .1s;
     cursor: pointer;
     display: inline;
-}
-
-.work__img img:hover {
-    transform: scale(1.1);
 }
 
 
