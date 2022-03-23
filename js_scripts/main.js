@@ -49,7 +49,7 @@ sr = ScrollReveal({
     origin: 'top',
     distance: '35px',
     duration: 1000,
-    reset: true,
+    reset: false,
 });
 
 
